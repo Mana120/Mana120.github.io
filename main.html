@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function load()
+            {
+                card = document.getElementById("card")
+                card.innerHTML+= "<h1> Instruction 1 </h1>"
+                setTimeout(function(){
+                    card.innerHTML+= "<h1> Instruction 2 </h1>"
+                }, 2000)
+                setTimeout(function(){
+                    card.innerHTML+= "<h1> Instruction 3 </h1>"
+                }, 3000)
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div onclick="load()" id = "card">
+            Click this
+        </div>
+    </body>
+</html>
